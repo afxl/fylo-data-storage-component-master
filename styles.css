@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Open+Sans&family=Poppins&family=Raleway:wght@400;700&display=swap');
+
+*{
+    font-family: Raleway,sans-serif;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+}
+.box{
+    align-self:center ;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end;
+    width: 60%;
+    height: 25%;
+    margin:auto;
+    gap:30px;
+}
+.box1{
+    background-color: hsl(228, 56%, 26%);
+    height: 100%;
+    width: 30%;
+    border-radius: 4px 70px 4px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    gap: 25px;
+}
+.head{
+    width: 40%;
+    height: 30px;
+}
+.head img{
+    min-width: 100%;
+    max-height: 100%;
+}
+.body{
+    width: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.wrapper{
+    background-color:hsl(229, 57%, 11%);
+    width: 33px;
+    height: 33px;
+    position: relative;
+    display: flex;
+    border-radius: 4px;
+}
+.wrapper img{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+.box2{
+    height: 72%;
+    width: 55%;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: hsl(243, 100%, 93%);
+    gap:7px;
+    position: relative;
+}
+.top{
+    margin: 0 10%;
+}
+.mid{
+    background-color: hsl(229, 57%, 11%);
+    width: 80%;
+    height: 10px;
+    margin: 0 10%;
+    border-radius: 5px;
+    padding: 1px;
+}
+#control{
+    background: linear-gradient(90deg,hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    height: 9px;border-radius: 4px;
+    width: 81.5%;margin:auto 0;
+    padding: 0.5px 1.5px;
+}
+#circle{
+    height: 8px;
+    width:8px;
+    border-radius: 50%;
+    background-color: white;
+    float: right;
+}
+.bot{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 10%;
+}
+#chat{
+    position: absolute;
+    right: 10%;
+    bottom:87%;
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    border-radius: 7px 7px 0 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+#chat p{
+    align-self: center;
+}
+.a,span{
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+#a1{
+    position: relative;
+    top:-2px;
+}
+#a2{
+    position: relative;
+    top:2px;
+}
+.b{
+    color: hsl(229, 7%, 55%);
+    font-size: 10px;
+    font-weight: 600;
+}
+#chat::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 0;
+    height: 0;
+    border-top:15px solid white;
+    border-left:15px solid transparent;
+}
+@media screen and (max-width:750px) {
+    .box{
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: auto;
+        align-self: center;
+    }
+    body{
+        background-image: url("./images/bg-mobile.png");
+        background-size: 100% 100%;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    .box1{
+        width: 300px;
+        min-height: 200px;
+    }
+    .box2{
+        width: 340px;
+        min-height: 160px;
+    }
+    #chat{
+        position: absolute;
+        top:85%;
+        left: 35%;
+        border-radius: 6px;
+    }
+    #chat:before{
+        display: none;
+    }
+}
+@media  screen and (min-width:751px) {
+    body{
+    background-image: url("./images/bg-desktop.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    }
+}
